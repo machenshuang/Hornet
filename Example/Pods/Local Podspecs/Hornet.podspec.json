@@ -1,0 +1,22 @@
+{
+  "name": "Hornet",
+  "version": "0.1.0",
+  "summary": "A short description of Hornet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/machenshuang/Hornet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "machenshuang": "machenshuang@joyy.com"
+  },
+  "source": {
+    "git": "https://github.com/machenshuang/Hornet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Hornet/Classes/**/*"
+}

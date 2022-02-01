@@ -1,0 +1,16 @@
+PODS:
+  - Hornet (0.1.0)
+
+DEPENDENCIES:
+  - Hornet (from `../`)
+
+EXTERNAL SOURCES:
+  Hornet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hornet: a5634e1fdd5027b0bbbf4fa5bf39cb83c7b31a4f
+
+PODFILE CHECKSUM: 795ab0b8c325f956b7677bfd2a146d6b76d97560
+
+COCOAPODS: 1.11.2

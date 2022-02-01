@@ -1,0 +1,6 @@
+framework module Hornet {
+  umbrella header "Hornet-umbrella.h"
+
+  export *
+  module * { export * }
+}
