@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-public protocol HornetProtocol {
+public protocol HornetProtocol: UIApplicationDelegate {
     static var shared: HornetProtocol { get }
     var priority: Int { get }
-    func setupModule()
+    func setup()
     func setupModuleSynchronously()
 }
