@@ -16,12 +16,12 @@ public class Hornet: NSObject {
         
     }
     
-    public class func register(serverName: String, module: HornetProtocol) {
-        Hornet.shared.moduleDict[serverName] = module
+    public class func register(serviceName: String, module: HornetProtocol) {
+        Hornet.shared.moduleDict[serviceName] = module
     }
     
-    public class func unregister(serverName: String) {
-        Hornet.shared.moduleDict.removeValue(forKey: serverName)
+    public class func unregister(serviceName: String) {
+        Hornet.shared.moduleDict.removeValue(forKey: serviceName)
     }
     
     public class func setupAllModules() {
@@ -30,8 +30,8 @@ public class Hornet: NSObject {
         }
     }
     
-    public class func module(by serverName: String) -> HornetProtocol? {
-        return Hornet.shared.moduleDict[serverName]
+    public class func module(by serviceName: String) -> HornetProtocol? {
+        return Hornet.shared.moduleDict[serviceName]
     }
     
     class func allRegisteredModules() -> [HornetProtocol] {
@@ -46,7 +46,7 @@ public class Hornet: NSObject {
 }
 
 extension Hornet: UIApplicationDelegate {
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let modules = Hornet.allRegisteredModules()
         var result = false
         modules.forEach {
@@ -58,11 +58,16 @@ extension Hornet: UIApplicationDelegate {
         return result
     }
     
-    public func applicationDidFinishLaunching(_ application: UIApplication) {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let modules = Hornet.allRegisteredModules()
+        var result = false
         modules.forEach {
-            $0.applicationDidFinishLaunching?(application)
+            let ret = $0.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? false
+            if !result {
+                result = ret
+            }
         }
+        return result
     }
     
     public func applicationWillEnterForeground(_ application: UIApplication) {
@@ -86,7 +91,7 @@ extension Hornet: UIApplicationDelegate {
         }
     }
     
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         let modules = Hornet.allRegisteredModules()
         var result = false
         modules.forEach {

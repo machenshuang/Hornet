@@ -1,0 +1,6 @@
+framework module Pods_Hornet_Example_Home {
+  umbrella header "Pods-Hornet_Example-Home-umbrella.h"
+
+  export *
+  module * { export * }
+}

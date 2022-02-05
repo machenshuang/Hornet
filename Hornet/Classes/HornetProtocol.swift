@@ -12,5 +12,5 @@ public protocol HornetProtocol: UIApplicationDelegate {
     static var shared: HornetProtocol { get }
     var priority: Int { get }
     func setup()
-    func setupModuleSynchronously()
+    func setupModuleSynchronously() -> Bool
 }

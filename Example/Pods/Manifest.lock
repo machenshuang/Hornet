@@ -1,8 +1,14 @@
 PODS:
   - Hornet (0.1.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Hornet (from `../`)
+  - SnapKit (= 5.0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   Hornet:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Hornet: b7b20a623e030b89fed4dd98e0f28eb49bd5dfb7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 795ab0b8c325f956b7677bfd2a146d6b76d97560
+PODFILE CHECKSUM: 7959439dc3465973c9dcb4d7cbfe07433b183abd
 
 COCOAPODS: 1.11.2

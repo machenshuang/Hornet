@@ -7,30 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42CB985827AD248A00A433A3 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB981F27AD22FF00A433A3 /* libCommon.a */; };
+		42CB985927AD248A00A433A3 /* libHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB985127AD245F00A433A3 /* libHome.a */; };
+		42CB985A27AD248A00A433A3 /* libMediator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB984B27AD244F00A433A3 /* libMediator.a */; };
+		42CB98A027AE17E300A433A3 /* HomeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42CB989C27AE163000A433A3 /* HomeBundle.bundle */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		B9F082D8249B43F8F6FAA93F /* Pods_Hornet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90526F19D8A29CBBB8BCAFB /* Pods_Hornet_Example.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		42CB981E27AD22FF00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB981A27AD22FF00A433A3 /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42CB980C27AD205800A433A3;
+			remoteInfo = Common;
+		};
+		42CB984A27AD244F00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984627AD244F00A433A3 /* Mediator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42CB982927AD238400A433A3;
+			remoteInfo = Mediator;
+		};
+		42CB985027AD245F00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984C27AD245F00A433A3 /* Home.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42CB983C27AD239900A433A3;
+			remoteInfo = Home;
+		};
+		42CB985227AD247E00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984C27AD245F00A433A3 /* Home.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CB983B27AD239900A433A3;
+			remoteInfo = Home;
+		};
+		42CB985427AD247E00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984627AD244F00A433A3 /* Mediator.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CB982827AD238400A433A3;
+			remoteInfo = Mediator;
+		};
+		42CB985627AD247E00A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB981A27AD22FF00A433A3 /* Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CB980B27AD205800A433A3;
+			remoteInfo = Common;
+		};
+		42CB989827AE163000A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984C27AD245F00A433A3 /* Home.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CB989327AE15F200A433A3;
+			remoteInfo = HomeBundle;
+		};
+		42CB989B27AE163000A433A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CB984C27AD245F00A433A3 /* Home.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42CB989427AE15F200A433A3;
+			remoteInfo = HomeBundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1290585D653AF38CA7318BA5 /* Pods-Hornet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hornet_Example.release.xcconfig"; path = "Target Support Files/Pods-Hornet_Example/Pods-Hornet_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2C90541F442D126A98A5ED37 /* Pods-Hornet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hornet_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Hornet_Tests/Pods-Hornet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		42CB981A27AD22FF00A433A3 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Modules/Common/Common.xcodeproj; sourceTree = "<group>"; };
+		42CB984627AD244F00A433A3 /* Mediator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mediator.xcodeproj; path = Modules/Mediator/Mediator.xcodeproj; sourceTree = "<group>"; };
+		42CB984C27AD245F00A433A3 /* Home.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Home.xcodeproj; path = Modules/Home/Home.xcodeproj; sourceTree = "<group>"; };
 		448A12F1FE57ED26E31E44E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5CE79418B1DA0D104CF695E7 /* Pods-Hornet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hornet_Example.debug.xcconfig"; path = "Target Support Files/Pods-Hornet_Example/Pods-Hornet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Hornet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hornet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8839612135425A2FB3269914 /* Pods_Hornet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hornet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E985C8EAEE1F68C8D8D3C2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A90526F19D8A29CBBB8BCAFB /* Pods_Hornet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hornet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB91CE7F89030293053E8051 /* Pods-Hornet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hornet_Tests.release.xcconfig"; path = "Target Support Files/Pods-Hornet_Tests/Pods-Hornet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B66CA5898539BB8D102EED /* Hornet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Hornet.podspec; path = ../Hornet.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -39,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CB985827AD248A00A433A3 /* libCommon.a in Frameworks */,
+				42CB985927AD248A00A433A3 /* libHome.a in Frameworks */,
+				42CB985A27AD248A00A433A3 /* libMediator.a in Frameworks */,
 				B9F082D8249B43F8F6FAA93F /* Pods_Hornet_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,11 +118,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		42CB981727AD207100A433A3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		42CB981827AD21F300A433A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		42CB981B27AD22FF00A433A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CB981F27AD22FF00A433A3 /* libCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42CB984727AD244F00A433A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CB984B27AD244F00A433A3 /* libMediator.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42CB984D27AD245F00A433A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CB985127AD245F00A433A3 /* libHome.a */,
+				42CB989C27AE163000A433A3 /* HomeBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				42CB984C27AD245F00A433A3 /* Home.xcodeproj */,
+				42CB984627AD244F00A433A3 /* Mediator.xcodeproj */,
+				42CB981A27AD22FF00A433A3 /* Common.xcodeproj */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for Hornet */,
+				607FACD21AFB9204008FA782 /* App */,
 				607FACD11AFB9204008FA782 /* Products */,
 				948547231A0AC7A0ED474A42 /* Pods */,
 				36F85A5FC393CC858A1E345C /* Frameworks */,
@@ -74,17 +182,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for Hornet */ = {
+		607FACD21AFB9204008FA782 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				42CB981827AD21F300A433A3 /* Resource */,
+				42CB981727AD207100A433A3 /* AppDelegate */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for Hornet";
+			name = App;
 			path = Hornet;
 			sourceTree = "<group>";
 		};
@@ -111,8 +216,6 @@
 			children = (
 				5CE79418B1DA0D104CF695E7 /* Pods-Hornet_Example.debug.xcconfig */,
 				1290585D653AF38CA7318BA5 /* Pods-Hornet_Example.release.xcconfig */,
-				2C90541F442D126A98A5ED37 /* Pods-Hornet_Tests.debug.xcconfig */,
-				BB91CE7F89030293053E8051 /* Pods-Hornet_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -133,6 +236,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				42CB989927AE163000A433A3 /* PBXTargetDependency */,
+				42CB985327AD247E00A433A3 /* PBXTargetDependency */,
+				42CB985527AD247E00A433A3 /* PBXTargetDependency */,
+				42CB985727AD247E00A433A3 /* PBXTargetDependency */,
 			);
 			name = Hornet_Example;
 			productName = Hornet;
@@ -151,6 +258,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YT6QHNRQP3;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -167,6 +275,20 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42CB981B27AD22FF00A433A3 /* Products */;
+					ProjectRef = 42CB981A27AD22FF00A433A3 /* Common.xcodeproj */;
+				},
+				{
+					ProductGroup = 42CB984D27AD245F00A433A3 /* Products */;
+					ProjectRef = 42CB984C27AD245F00A433A3 /* Home.xcodeproj */;
+				},
+				{
+					ProductGroup = 42CB984727AD244F00A433A3 /* Products */;
+					ProjectRef = 42CB984627AD244F00A433A3 /* Mediator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Hornet_Example */,
@@ -174,14 +296,45 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		42CB981F27AD22FF00A433A3 /* libCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommon.a;
+			remoteRef = 42CB981E27AD22FF00A433A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42CB984B27AD244F00A433A3 /* libMediator.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediator.a;
+			remoteRef = 42CB984A27AD244F00A433A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42CB985127AD245F00A433A3 /* libHome.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHome.a;
+			remoteRef = 42CB985027AD245F00A433A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42CB989C27AE163000A433A3 /* HomeBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HomeBundle.bundle;
+			remoteRef = 42CB989B27AE163000A433A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				42CB98A027AE17E300A433A3 /* HomeBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +349,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hornet_Example/Pods-Hornet_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Hornet/Hornet.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hornet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -235,22 +390,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		42CB985327AD247E00A433A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Home;
+			targetProxy = 42CB985227AD247E00A433A3 /* PBXContainerItemProxy */;
 		};
+		42CB985527AD247E00A433A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mediator;
+			targetProxy = 42CB985427AD247E00A433A3 /* PBXContainerItemProxy */;
+		};
+		42CB985727AD247E00A433A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			targetProxy = 42CB985627AD247E00A433A3 /* PBXContainerItemProxy */;
+		};
+		42CB989927AE163000A433A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HomeBundle;
+			targetProxy = 42CB989827AE163000A433A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -307,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -353,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -366,6 +535,7 @@
 			baseConfigurationReference = 5CE79418B1DA0D104CF695E7 /* Pods-Hornet_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YT6QHNRQP3;
 				INFOPLIST_FILE = Hornet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -373,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -382,6 +552,7 @@
 			baseConfigurationReference = 1290585D653AF38CA7318BA5 /* Pods-Hornet_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YT6QHNRQP3;
 				INFOPLIST_FILE = Hornet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -389,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
